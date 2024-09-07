@@ -1,4 +1,4 @@
-#Tic Tac Toe Game
+#TicTacToe_Game
 Welcome to the Tic Tac Toe game repository! This project is a classic implementation of the popular game Tic Tac Toe, where two players take turns marking spaces on a 3x3 grid with 'X' and 'O' to achieve three in a row horizontally, vertically, or diagonally.
 
 Features
