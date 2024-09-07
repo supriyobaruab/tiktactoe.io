@@ -1,0 +1,50 @@
+* {
+  margin: 0 auto;
+  padding: 10px;
+}
+body {
+  background-color: #548687;
+  text-align: center;
+}
+.container {
+  height: 70vh;
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border-style: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: purple;
+}
+.box:hover {
+  background-color: skyblue;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 1s;
+  transition-delay: 0.01s;
+}
+.reset .rstbtn {
+  background-color: light;
+  border-radius: 0.5rem;
+  border-style: none;
+}
+.reset .newgame {
+  background-color: light;
+  border-radius: 0.5rem;
+  border-style: none;
+}
+.reset .rstbtn:hover {
+  background-color: rebeccapurple;
+  transition-duration: 0.5s;
+}
+.hide {
+  display: none;
+}
