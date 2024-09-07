@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  gap: 10px;
+  gap: 20px;
 }
 
 .box {
@@ -24,6 +24,7 @@ body {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   font-size: 8vmin;
   color: purple;
+  background-color: wheat;
 }
 .box:hover {
   background-color: skyblue;
