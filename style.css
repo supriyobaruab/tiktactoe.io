@@ -1,24 +1,24 @@
-* {
-  margin: 0 auto;
-  padding: 10px;
-}
 body {
   background-color: #548687;
   text-align: center;
 }
 .container {
-  height: 70vh;
+  height: 65vh;
 }
 .game {
   height: 60vmin;
   width: 60vmin;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
 }
 
 .box {
-  height: 18vmin;
-  width: 18vmin;
+  height: 16vmin;
+  width: 16vmin;
   border-radius: 1rem;
   border-style: none;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
@@ -32,17 +32,30 @@ body {
   transition-delay: 0.01s;
 }
 .reset .rstbtn {
-  background-color: light;
+  width: 100px;
+  height: 40px;
+  background-color: black;
   border-radius: 0.5rem;
   border-style: none;
+  margin-top: -20px;
+  color: wheat;
 }
-.reset .newgame {
-  background-color: light;
+.newgame {
+  background-color: black;
   border-radius: 0.5rem;
   border-style: none;
+  color: wheat;
+  width: 100px;
+  height: 40px;
 }
-.reset .rstbtn:hover {
-  background-color: rebeccapurple;
+.rstbtn:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 0.5s;
+}
+.newgame:hover {
+  background-color: white;
+  color: black;
   transition-duration: 0.5s;
 }
 .hide {
