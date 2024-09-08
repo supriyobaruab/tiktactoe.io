@@ -3,6 +3,7 @@ let hide = document.querySelector(".hide");
 let rr = document.querySelector(".newgame");
 let tt = document.querySelector(".rstbtn");
 let turn0 = true;
+let count =0;/*
 let winnerPattern = [
   [0, 1, 2],
   [0, 3, 6],
@@ -60,6 +61,7 @@ const checkWinner = () => {
         console.log("winner");
         hide.classList.remove("hide");
         disableBoxes();
+        draw();
       }
     }
   }
@@ -67,3 +69,14 @@ const checkWinner = () => {
 
 rr.addEventListener("click",resetGame);
 tt.addEventListener("click",resetGame);
+*/
+
+const gameDraw =()=>{
+  boxes.forEach((box)=>{
+  box.addEventListener("click",()=>{
+  count++;
+  console.log(count);
+  })
+  })
+}
+gameDraw();
