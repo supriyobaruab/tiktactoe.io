@@ -1,5 +1,7 @@
 let boxes = document.querySelectorAll(".box");
 let hide = document.querySelector(".hide");
+let rr = document.querySelector(".newgame");
+let tt = document.querySelector(".rstbtn");
 let turn0 = true;
 let winnerPattern = [
   [0, 1, 2],
@@ -11,6 +13,11 @@ let winnerPattern = [
   [3, 4, 5],
   [6, 7, 8],
 ];
+const resetGame = ()=>{
+  turn0 =true;
+  enableBoxes();
+  hide.classList.add("hide");
+}
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
     console.log("the box was clicked");
@@ -26,6 +33,17 @@ boxes.forEach((box) => {
     checkWinner();
   });
 });
+const disableBoxes = () =>{
+  for (let box of boxes){
+    box.disabled = true;
+  }
+}
+const enableBoxes = () =>{
+  for (let box of boxes){
+    box.disabled = false;
+    box.innerText ="";
+  }
+}
 
 const checkWinner = () => {
   for (let pattern of winnerPattern) {
@@ -41,7 +59,11 @@ const checkWinner = () => {
       if (prn1 === prn2 && prn2 == prn3) {
         console.log("winner");
         hide.classList.remove("hide");
+        disableBoxes();
       }
     }
   }
 };
+
+rr.addEventListener("click",resetGame);
+tt.addEventListener("click",resetGame);
