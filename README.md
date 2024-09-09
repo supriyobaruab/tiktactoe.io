@@ -1,4 +1,4 @@
-# TikTakToe  game (Still Working)
+# TikTakToe  game
 
 ### Welcome to the Tic Tac Toe game repository! 
 [CLICK HERE TO LUNCH THE GAME](https://supriyobaruab.github.io/tiktactoe.io/)
